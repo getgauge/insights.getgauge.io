@@ -253,6 +253,9 @@ const htmltemplate = `
 				font-weight: bold;
 			}
 
+			.usages {
+				padding: 2rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -276,21 +279,21 @@ const htmltemplate = `
 				<div id="map"></div>
 			</section>
 			<section>
-				<h2 id="console">Command Usage - Console</h2>
+				<h2 class="usages" id="console">Command Usage - Console</h2>
 				{{template "table" .Console}}
 				<div class="actions">
 					<a href="./console.csv">Download</a>
 				</div>
 			</section>
 			<section>
-				<h2 id="ci">Command Usage - CI</h2>
+				<h2 class="usages" id="ci">Command Usage - CI</h2>
 				{{template "table" .CI}}
 				<div class="actions">
 					<a href="./ci.csv">Download</a>
 				</div>
 			</section>
 			<section>
-				<h2 id="api">Command Usage - API</h2>
+				<h2 class="usages" id="api">Command Usage - API</h2>
 				{{template "table" .API}}
 				<div class="actions">
 					<a href="./api.csv">Download</a>
