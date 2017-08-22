@@ -182,7 +182,6 @@ const htmltemplate = `
 
 			h2 {
 				font-size: 1.8em;
-				font-family: "Open Sans";
 				margin-bottom: 1rem;
 			}
 
