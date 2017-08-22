@@ -256,6 +256,17 @@ const htmltemplate = `
 			.usages {
 				padding: 2rem;
 			}
+
+			.download {
+				color: #755C07;
+				border: 1px solid #755C07;
+			}
+
+			.download:hover {
+				font-weight: bold;
+				color: #362B03;
+				border: 1px solid #362B03;
+			}
 		</style>
 	</head>
 	<body>
@@ -282,21 +293,21 @@ const htmltemplate = `
 				<h2 class="usages" id="console">Command Usage - Console</h2>
 				{{template "table" .Console}}
 				<div class="actions">
-					<a href="./console.csv">Download</a>
+					<a class="download button" href="./console.csv">Download</a>
 				</div>
 			</section>
 			<section>
 				<h2 class="usages" id="ci">Command Usage - CI</h2>
 				{{template "table" .CI}}
 				<div class="actions">
-					<a href="./ci.csv">Download</a>
+					<a class="button download" href="./ci.csv">Download</a>
 				</div>
 			</section>
 			<section>
 				<h2 class="usages" id="api">Command Usage - API</h2>
 				{{template "table" .API}}
 				<div class="actions">
-					<a href="./api.csv">Download</a>
+					<a class="button download" href="./api.csv">Download</a>
 				</div>
 			</section>
 		</div>
